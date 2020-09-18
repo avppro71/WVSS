@@ -1,0 +1,9 @@
+*.suo
+*.ncb
+*.exe
+*.pdb
+*.ilk
+*.dll
+*.aps
+*.vsp
+*.psess
