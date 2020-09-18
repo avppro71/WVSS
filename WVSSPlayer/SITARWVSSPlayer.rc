@@ -1,0 +1,622 @@
+// Microsoft Visual C++ generated resource script.
+//
+#include "resource.h"
+
+#define APSTUDIO_READONLY_SYMBOLS
+/////////////////////////////////////////////////////////////////////////////
+//
+// Generated from the TEXTINCLUDE 2 resource.
+//
+#ifndef APSTUDIO_INVOKED
+#include "targetver.h"
+#endif
+#include "afxres.h"
+
+/////////////////////////////////////////////////////////////////////////////
+#undef APSTUDIO_READONLY_SYMBOLS
+
+/////////////////////////////////////////////////////////////////////////////
+// Russian resources
+
+#if !defined(AFX_RESOURCE_DLL) || defined(AFX_TARG_RUS)
+#ifdef _WIN32
+LANGUAGE LANG_RUSSIAN, SUBLANG_DEFAULT
+#pragma code_page(1251)
+#endif //_WIN32
+
+#ifdef APSTUDIO_INVOKED
+/////////////////////////////////////////////////////////////////////////////
+//
+// TEXTINCLUDE
+//
+
+1 TEXTINCLUDE 
+BEGIN
+    "resource.h\0"
+END
+
+2 TEXTINCLUDE 
+BEGIN
+    "#ifndef APSTUDIO_INVOKED\r\n"
+    "#include ""targetver.h""\r\n"
+    "#endif\r\n"
+    "#include ""afxres.h""\r\n"
+    "\0"
+END
+
+3 TEXTINCLUDE 
+BEGIN
+    "#define _AFX_NO_SPLITTER_RESOURCES\r\n"
+    "#define _AFX_NO_OLE_RESOURCES\r\n"
+    "#define _AFX_NO_TRACKER_RESOURCES\r\n"
+    "#define _AFX_NO_PROPERTY_RESOURCES\r\n"
+    "\r\n"
+    "#if !defined(AFX_RESOURCE_DLL) || defined(AFX_TARG_ENU)\r\n"
+    "LANGUAGE 9, 1\r\n"
+    "#pragma code_page(1252)\r\n"
+    "#include ""res\\SITARWVSSPlayer.rc2""  // non-Microsoft Visual C++ edited resources\r\n"
+    "#include ""afxres.rc""     // Standard components\r\n"
+    "#endif\r\n"
+    "\0"
+END
+
+#endif    // APSTUDIO_INVOKED
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Icon
+//
+
+// Icon with lowest ID value placed first to ensure application icon
+// remains consistent on all systems.
+IDR_MAINFRAME           ICON                    "res\\SITARWVSSPlayer.ico"
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Dialog
+//
+
+IDD_PROGRESS DIALOGEX 0, 0, 400, 75
+STYLE DS_SETFONT | DS_MODALFRAME | DS_FIXEDSYS | WS_POPUP | WS_CAPTION | WS_SYSMENU
+CAPTION "File process progress"
+FONT 8, "MS Shell Dlg", 400, 0, 0x1
+BEGIN
+    PUSHBUTTON      "Cancel",IDCANCEL,174,54,50,14
+    LTEXT           "Static",IDS_TEXT1,6,12,390,8
+    CONTROL         "",IDC_PROGRESS,"msctls_progress32",PBS_SMOOTH,6,30,390,14,WS_EX_TRANSPARENT
+END
+
+IDD_BATCH DIALOGEX 0, 0, 316, 159
+STYLE DS_SETFONT | DS_MODALFRAME | DS_FIXEDSYS | WS_POPUP | WS_CAPTION | WS_SYSMENU
+CAPTION "Batch processing"
+FONT 8, "MS Shell Dlg", 400, 0, 0x1
+BEGIN
+    GROUPBOX        "",IDC_STATIC,6,12,300,60
+    CONTROL         "By override values",IDR_BY_OVERRIDE,"Button",BS_AUTORADIOBUTTON | WS_GROUP,12,12,75,10
+    LTEXT           "Start dZ",IDC_STATIC,18,36,27,8,NOT WS_GROUP
+    EDITTEXT        IDE_START_DZ,54,33,40,14,ES_AUTOHSCROLL
+    LTEXT           "End dZ",IDC_STATIC,102,36,23,8,NOT WS_GROUP
+    EDITTEXT        IDE_END_DZ,138,33,40,14,ES_AUTOHSCROLL
+    LTEXT           "Start dH",IDC_STATIC,18,57,28,8,NOT WS_GROUP
+    EDITTEXT        IDE_START_DH,54,54,40,14,ES_AUTOHSCROLL
+    LTEXT           "End dH",IDC_STATIC,102,56,24,8,NOT WS_GROUP
+    EDITTEXT        IDE_END_DH,138,54,40,14,ES_AUTOHSCROLL
+    GROUPBOX        "",IDC_STATIC,6,84,300,48
+    CONTROL         "By frame",IDR_BY_FRAME,"Button",BS_AUTORADIOBUTTON,12,84,45,10
+    LTEXT           "Start frame",IDC_STATIC,18,105,38,8
+    EDITTEXT        IDE_START_FRAME,58,102,40,14,ES_AUTOHSCROLL
+    LTEXT           "End frame",IDC_STATIC,106,105,34,8
+    EDITTEXT        IDE_END_FRAME,147,102,40,14,ES_AUTOHSCROLL
+    DEFPUSHBUTTON   "OK",IDOK,105,138,50,14
+    PUSHBUTTON      "Cancel",IDCANCEL,159,138,50,14
+END
+
+IDD_BARVIEW DIALOGEX 0, 0, 731, 25
+STYLE DS_SETFONT | DS_FIXEDSYS | WS_POPUP | WS_THICKFRAME
+FONT 8, "MS Shell Dlg", 400, 0, 0x1
+BEGIN
+    SCROLLBAR       IDC_SCROLL1,90,7,353,11
+    LTEXT           "Time:",IDS_TIME,521,8,144,8
+    PUSHBUTTON      "Play",IDB_PLAY,12,6,30,14
+    EDITTEXT        IDE_CURPOS,449,5,32,14,ES_AUTOHSCROLL
+    DEFPUSHBUTTON   "Set",IDB_CURPOS,485,5,30,14
+    COMBOBOX        IDO_PLAYSPEED,48,6,36,83,CBS_DROPDOWNLIST | CBS_SORT | WS_VSCROLL | WS_TABSTOP
+    PUSHBUTTON      "Main View",IDB_MAIN_VIEW,672,5,50,14
+END
+
+IDD_WVSS_MAIN DIALOGEX 0, 0, 442, 237
+STYLE DS_SETFONT | DS_FIXEDSYS | WS_MINIMIZEBOX | WS_POPUP | WS_CAPTION | WS_SYSMENU
+CAPTION "WVSS Player"
+FONT 8, "MS Shell Dlg", 400, 0, 0x1
+BEGIN
+    SCROLLBAR       IDC_SCROLL1,4,179,428,11
+    PUSHBUTTON      "Play",IDB_PLAY,6,195,50,14
+    COMBOBOX        IDO_PLAYSPEED,60,196,36,83,CBS_DROPDOWNLIST | CBS_SORT | WS_VSCROLL | WS_TABSTOP
+    LTEXT           "Frame",IDS_CURPOS,104,198,21,8
+    EDITTEXT        IDE_CURPOS,126,195,32,14,ES_AUTOHSCROLL | ES_NUMBER
+    DEFPUSHBUTTON   "Set",IDB_SETFRAME,162,195,30,14
+    PUSHBUTTON      "Rerun Frame",IDB_CUR_FRAME,198,195,48,14
+    LTEXT           "Time:",IDS_TIME,252,198,186,8
+    PUSHBUTTON      "Bar View",IDB_BARVIEW,6,214,50,14
+    PUSHBUTTON      "Connect Vis",IDB_COMMS_CONNECT,60,214,50,14
+    COMBOBOX        IDO_VIS_CENTER_ON,180,215,66,101,CBS_DROPDOWNLIST | CBS_SORT | WS_VSCROLL | WS_TABSTOP
+    PUSHBUTTON      "Center view on",IDB_VIS_CENTER_ON,114,214,60,14
+    CONTROL         "Follow",IDC_VIS_CENTER_ON,"Button",BS_AUTOCHECKBOX | WS_TABSTOP,252,216,36,10
+END
+
+IDD_PAGE_AIRCRAFT DIALOGEX 0, 0, 424, 141
+STYLE DS_SETFONT | DS_MODALFRAME | DS_FIXEDSYS | WS_POPUP | WS_CAPTION | WS_SYSMENU
+CAPTION "Aircraft"
+FONT 8, "MS Shell Dlg", 400, 0, 0x1
+BEGIN
+    CONTROL         "",IDC_AIRCRAFT_LIST,"SysListView32",LVS_REPORT | LVS_OWNERDRAWFIXED | LVS_ALIGNLEFT | WS_BORDER | WS_TABSTOP,6,6,414,126
+END
+
+IDD_PAGE_SEVERITY_RESULTS DIALOGEX 0, 0, 424, 141
+STYLE DS_SETFONT | DS_MODALFRAME | DS_FIXEDSYS | WS_POPUP | WS_CAPTION | WS_SYSMENU
+CAPTION "Severity Results"
+FONT 8, "MS Shell Dlg", 400, 0, 0x1
+BEGIN
+    CONTROL         "",IDC_SEVERITY_RES_LIST,"SysListView32",LVS_REPORT | LVS_OWNERDRAWFIXED | LVS_ALIGNLEFT | WS_BORDER | WS_TABSTOP,6,6,414,126
+END
+
+IDD_PAGE_OVERRIDE DIALOGEX 0, 0, 424, 141
+STYLE DS_SETFONT | DS_MODALFRAME | DS_FIXEDSYS | WS_POPUP | WS_CAPTION | WS_SYSMENU
+CAPTION "Overrides"
+FONT 8, "MS Shell Dlg", 400, 0, 0x1
+BEGIN
+    CONTROL         "Override entry input values",IDC_DZDHOVERRIDE,"Button",BS_AUTOCHECKBOX | WS_TABSTOP,6,9,102,10
+    LTEXT           "dZ (horizontal offset to the right)",IDS_dZ,24,28,107,8
+    EDITTEXT        IDE_dZ,138,24,30,14,ES_AUTOHSCROLL
+    LTEXT           "dH (vertical offset)",IDS_dH,24,44,84,8
+    EDITTEXT        IDE_dH,138,42,30,14,ES_AUTOHSCROLL
+    LTEXT           "dAngle (closing angle, 0 - parallel)",IDS_dAngle,24,62,114,8
+    EDITTEXT        IDE_dAngle,138,60,30,14,ES_AUTOHSCROLL
+    CONTROL         "",IDSC_dZ,"msctls_updown32",UDS_SETBUDDYINT | UDS_ARROWKEYS,167,24,11,14
+    CONTROL         "",IDSC_dH,"msctls_updown32",UDS_SETBUDDYINT | UDS_ARROWKEYS,167,42,11,14
+    PUSHBUTTON      " Batch...",IDB_BATCH,6,120,50,14
+    CONTROL         "",IDP_PROGRESS,"msctls_progress32",PBS_SMOOTH | WS_BORDER,60,120,360,14
+    EDITTEXT        IDE_OVERRIDE_GAMMA,78,78,36,14,ES_AUTOHSCROLL
+    CONTROL         "Override gamma",IDC_OVERRIDE_GAMMA,"Button",BS_AUTOCHECKBOX | WS_TABSTOP,6,81,69,10
+    LTEXT           "Batch results",IDC_STATIC,198,6,42,8
+    EDITTEXT        IDE_OVERRIDE_BATCH_RESULTS,198,18,216,96,ES_MULTILINE | ES_AUTOVSCROLL | ES_AUTOHSCROLL | ES_WANTRETURN
+END
+
+IDD_PAGE_DISPLAY DIALOGEX 0, 0, 424, 141
+STYLE DS_SETFONT | DS_MODALFRAME | DS_FIXEDSYS | WS_POPUP | WS_CAPTION | WS_SYSMENU
+CAPTION "Display"
+FONT 8, "MS Shell Dlg", 400, 0, 0x1
+BEGIN
+    LTEXT           "Scenario",IDC_STATIC,6,15,28,8
+    COMBOBOX        IDO_SCENARIO,42,12,378,129,CBS_DROPDOWNLIST | CBS_SORT | WS_VSCROLL | WS_TABSTOP
+    CONTROL         "Show Air Blocks",IDC_AIR_BLOCKS,"Button",BS_AUTOCHECKBOX | WS_TABSTOP,6,36,65,10
+    CONTROL         "Show Cone of Uncertainty",IDC_SHOW_CONE_OF_UNCERTAINTY,
+                    "Button",BS_AUTOCHECKBOX | WS_TABSTOP,78,36,100,10
+    CONTROL         "Lines from aircraft center",IDC_SHOW_LINES_FROM_AC_CENTER,
+                    "Button",BS_AUTOCHECKBOX | WS_TABSTOP,180,36,96,10
+    CONTROL         "Lines from wingtips",IDC_SHOW_LINES_FROM_WINGTIPS,
+                    "Button",BS_AUTOCHECKBOX | WS_TABSTOP,276,36,77,10
+    CONTROL         "Debug Messages",IDC_DEBUG_MESSAGES,"Button",BS_AUTOCHECKBOX | WS_TABSTOP,6,54,70,10
+    LTEXT           "Oversize plane",IDC_STATIC,6,75,48,8
+    EDITTEXT        IDE_PLANE_SIZE,60,72,30,14,ES_AUTOHSCROLL
+    LTEXT           "times",IDC_STATIC,96,75,18,8
+    LTEXT           "Oversize wake",IDC_STATIC,126,74,48,8
+    EDITTEXT        IDE_WAKE_SIZE,180,72,30,14,ES_AUTOHSCROLL
+    LTEXT           "times",IDC_STATIC,216,74,18,8
+    LTEXT           "Show only these wake sections",IDC_STATIC,6,92,108,8
+    EDITTEXT        IDE_SHOW_SECTIONS,132,90,52,14,ES_AUTOHSCROLL
+    LTEXT           "Format # or #-# where # is a 0-based section number (see Info tab)",IDC_STATIC,192,93,222,8
+    LTEXT           "Show distance circles around a point",IDC_STATIC,6,110,126,8
+    COMBOBOX        IDO_RING_AIRCRAFT,132,108,132,96,CBS_DROPDOWNLIST | WS_VSCROLL | WS_TABSTOP
+    LTEXT           "Circle radii(nm). Format R1,...,RN",IDC_STATIC,6,126,109,8
+    EDITTEXT        IDE_CIRCLE_RADII,132,123,132,14,ES_AUTOHSCROLL
+END
+
+IDD_PAGE_WAKE_OPTIONS DIALOGEX 0, 0, 424, 141
+STYLE DS_SETFONT | DS_MODALFRAME | DS_FIXEDSYS | WS_POPUP | WS_CAPTION | WS_SYSMENU
+CAPTION "Wake Options"
+FONT 8, "MS Shell Dlg", 400, 0, 0x1
+BEGIN
+    CONTROL         "Calculate severity",IDC_CALC_SEVERITY,"Button",BS_AUTOCHECKBOX | WS_TABSTOP,6,30,72,10
+    CONTROL         "Simulate",IDC_EMULATE_FLIGHT,"Button",BS_AUTOCHECKBOX | WS_TABSTOP,6,49,43,10
+    LTEXT           "Initial Plane To Wake Cross Distance, m",-1,6,86,120,8
+    EDITTEXT        IDE_INITIALPLANETOWAKECROSSDISTANCE,150,84,40,14,ES_AUTOHSCROLL
+    LTEXT           "Pilot response",-1,6,121,46,8
+    COMBOBOX        IDO_PILOT_RESPONSE,56,120,364,54,CBS_DROPDOWNLIST | CBS_SORT | WS_VSCROLL | WS_TABSTOP
+    LTEXT           "Wake section to wingtip tolerance, m",-1,6,105,120,8
+    EDITTEXT        IDE_WAKESECTIONTOWINGTIPTOLERANCE,150,102,40,14,ES_AUTOHSCROLL
+    COMBOBOX        IDO_FLIGHT_SPEED,160,66,30,99,CBS_DROPDOWNLIST | CBS_SORT | WS_VSCROLL | WS_TABSTOP
+    EDITTEXT        IDE_FLIGHT_TIME,50,48,18,14,ES_AUTOHSCROLL
+    LTEXT           "seconds of flight if entry detected or use ",IDS_FLIGHT_TIME,76,50,134,8
+    CONTROL         "Auto Stop",IDC_FLIGHT_AUTO_STOP,"Button",BS_AUTOCHECKBOX | WS_TABSTOP,210,49,48,10
+    LTEXT           "Speed of silulated flight playback (1 - actual)",IDS_FLIGHT_TIME2,6,66,150,8
+    CONTROL         "Use ground effect",IDC_USE_GROUND_EFFECT_ALGORITHM,
+                    "Button",BS_AUTOCHECKBOX | WS_TABSTOP,6,12,72,10
+    CONTROL         "Use stratification effect",IDC_USE_STRATIFICATION_EFFECT_ALGORITHM,
+                    "Button",BS_AUTOCHECKBOX | WS_TABSTOP,84,12,90,10
+    CONTROL         "Use Cone of Uncertainty for Severity Calculation",IDC_USE_COU_FOR_SEVERITY,
+                    "Button",BS_AUTOCHECKBOX | WS_TABSTOP,180,12,168,10
+END
+
+IDD_PAGE_LOAD DIALOGEX 0, 0, 424, 141
+STYLE DS_SETFONT | DS_MODALFRAME | DS_FIXEDSYS | WS_POPUP | WS_CAPTION | WS_SYSMENU
+CAPTION "Load"
+FONT 8, "MS Shell Dlg", 400, 0, 0x1
+BEGIN
+    PUSHBUTTON      " Browse...",IDB_LOAD,6,12,50,14
+    LTEXT           "Track file type",IDC_STATIC,66,14,46,8
+    COMBOBOX        IDO_FILE_TYPE,126,12,72,65,CBS_DROPDOWNLIST | CBS_SORT | WS_VSCROLL | WS_TABSTOP
+    LTEXT           "Interpolation time period",IDC_STATIC,210,15,60,8
+    COMBOBOX        IDO_TS,270,12,72,72,CBS_DROPDOWNLIST | CBS_SORT | WS_VSCROLL | WS_TABSTOP
+    CONTROL         "Make output files",IDC_MAKE_AUX_FILES,"Button",BS_AUTOCHECKBOX | WS_TABSTOP,6,36,66,10
+    CONTROL         "Use real weather",IDC_REAL_WEATHER,"Button",BS_AUTOCHECKBOX | WS_TABSTOP,84,36,71,10
+    CONTROL         "Do not extrapolate wind for altitude",IDC_NO_WIND_EXTRAPOLATION,
+                    "Button",BS_AUTOCHECKBOX | WS_TABSTOP,162,36,131,10
+    LTEXT           "Default surface wind from",IDC_STATIC,6,56,84,8
+    EDITTEXT        IDE_WINDDIRECTION,96,54,24,14,ES_AUTOHSCROLL
+    LTEXT           "at",IDC_STATIC,126,56,8,8
+    EDITTEXT        IDE_WINDSPEED,138,54,24,14,ES_AUTOHSCROLL
+    LTEXT           "knots",IDC_STATIC,168,56,18,8
+    LTEXT           "Wake circulation cutoff",IDC_STATIC,6,74,78,8
+    EDITTEXT        IDE_MIN_GAMMA,96,72,24,14,ES_AUTOHSCROLL
+    LTEXT           "default is 150",IDC_STATIC,126,74,78,8
+    CONTROL         "",IDC_STATIC,"Static",SS_BLACKRECT,6,96,414,1,WS_EX_STATICEDGE
+    LTEXT           "Currently loaded file",IDS_FILE,6,102,414,8
+    PUSHBUTTON      "Reload",IDB_RELOAD,6,120,50,14
+END
+
+IDD_PAGE_INFO DIALOGEX 0, 0, 424, 141
+STYLE DS_SETFONT | DS_MODALFRAME | DS_FIXEDSYS | WS_POPUP | WS_CAPTION | WS_SYSMENU
+CAPTION "Information"
+FONT 8, "MS Shell Dlg", 400, 0, 0x1
+BEGIN
+    LISTBOX         IDL_STATUS,6,6,414,108,LBS_SORT | LBS_NOINTEGRALHEIGHT | WS_VSCROLL | WS_TABSTOP
+    PUSHBUTTON      "Help",IDB_HELP,6,120,50,14
+    PUSHBUTTON      "Clear Messages",IDB_CLEAR_HISTORY,60,120,60,14
+    PUSHBUTTON      "Save Messages...",IDB_SAVE_HISTORY,126,120,66,14
+END
+
+IDD_PAGE_FRAME DIALOGEX 0, 0, 424, 141
+STYLE DS_SETFONT | DS_MODALFRAME | DS_FIXEDSYS | WS_POPUP | WS_CAPTION | WS_SYSMENU
+CAPTION "Frame"
+FONT 8, "MS Shell Dlg", 400, 0, 0x1
+BEGIN
+    CONTROL         "",IDC_FRAME_LIST_PLANE,"SysListView32",LVS_REPORT | LVS_OWNERDRAWFIXED | LVS_ALIGNLEFT | WS_BORDER | WS_TABSTOP,7,7,413,59
+    CONTROL         "",IDC_FRAME_LIST_WAKE,"SysListView32",LVS_REPORT | LVS_OWNERDRAWFIXED | LVS_ALIGNLEFT | WS_BORDER | WS_TABSTOP,6,72,414,65
+END
+
+IDD_PAGE_COMMS DIALOGEX 0, 0, 424, 141
+STYLE DS_SETFONT | DS_MODALFRAME | DS_FIXEDSYS | WS_POPUP | WS_CAPTION | WS_SYSMENU
+CAPTION "Comms"
+FONT 8, "MS Shell Dlg", 400, 0, 0x1
+BEGIN
+    LISTBOX         IDL_INFO,6,6,414,108,LBS_SORT | LBS_NOINTEGRALHEIGHT | WS_VSCROLL | WS_TABSTOP
+    PUSHBUTTON      "Clear Messages",IDB_CLEAR_HISTORY,6,120,60,14
+END
+
+IDD_PAGE_SENSITIVITY DIALOGEX 0, 0, 424, 141
+STYLE DS_SETFONT | DS_MODALFRAME | DS_FIXEDSYS | WS_POPUP | WS_CAPTION | WS_SYSMENU
+CAPTION "Sensitivity"
+FONT 8, "MS Shell Dlg", 400, 0, 0x1
+BEGIN
+    CONTROL         "",IDC_SENSITIVITY_LIST,"SysListView32",LVS_REPORT | LVS_OWNERDRAWFIXED | LVS_ALIGNLEFT | WS_BORDER | WS_TABSTOP,6,6,414,126
+END
+
+IDD_PAGE_WEATHER DIALOGEX 0, 0, 424, 141
+STYLE DS_SETFONT | DS_MODALFRAME | DS_FIXEDSYS | WS_POPUP | WS_CAPTION | WS_SYSMENU
+CAPTION "Weather"
+FONT 8, "MS Shell Dlg", 400, 0, 0x1
+BEGIN
+    CONTROL         "",IDC_WEATHER_LIST,"SysListView32",LVS_REPORT | LVS_OWNERDRAWFIXED | LVS_ALIGNLEFT | WS_BORDER | WS_TABSTOP,6,6,414,126
+END
+
+IDD_PAGE_WAKE_INTERACTION DIALOGEX 0, 0, 424, 141
+STYLE DS_SETFONT | DS_MODALFRAME | DS_FIXEDSYS | WS_POPUP | WS_CAPTION | WS_SYSMENU
+CAPTION "Wake Frame"
+FONT 8, "MS Shell Dlg", 400, 0, 0x1
+BEGIN
+    CONTROL         "",IDC_WAKEFRAME_LIST_INTERACTION,"SysListView32",LVS_REPORT | LVS_OWNERDRAWFIXED | LVS_ALIGNLEFT | WS_BORDER | WS_TABSTOP,7,7,413,125
+END
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// DESIGNINFO
+//
+
+#ifdef APSTUDIO_INVOKED
+GUIDELINES DESIGNINFO 
+BEGIN
+    IDD_PROGRESS, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 393
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 68
+    END
+
+    IDD_BATCH, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 309
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 152
+    END
+
+    IDD_BARVIEW, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 724
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 18
+    END
+
+    IDD_WVSS_MAIN, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 435
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 230
+    END
+
+    IDD_PAGE_AIRCRAFT, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 417
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 134
+    END
+
+    IDD_PAGE_SEVERITY_RESULTS, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 417
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 134
+    END
+
+    IDD_PAGE_OVERRIDE, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 417
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 134
+    END
+
+    IDD_PAGE_DISPLAY, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 417
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 134
+    END
+
+    IDD_PAGE_WAKE_OPTIONS, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 417
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 134
+    END
+
+    IDD_PAGE_LOAD, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 417
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 134
+    END
+
+    IDD_PAGE_INFO, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 417
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 134
+    END
+
+    IDD_PAGE_FRAME, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 417
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 134
+    END
+
+    IDD_PAGE_COMMS, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 417
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 134
+    END
+
+    IDD_PAGE_SENSITIVITY, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 417
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 134
+    END
+
+    IDD_PAGE_WEATHER, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 417
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 134
+    END
+
+    IDD_PAGE_WAKE_INTERACTION, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 417
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 134
+    END
+END
+#endif    // APSTUDIO_INVOKED
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Accelerator
+//
+
+IDR_MAIN ACCELERATORS 
+BEGIN
+    "3",            ID_MOVE_LL,             VIRTKEY, ALT, NOINVERT
+    "4",            ID_MOVE_LR,             VIRTKEY, ALT, NOINVERT
+    "1",            ID_MOVE_UL,             VIRTKEY, ALT, NOINVERT
+    "2",            ID_MOVE_UR,             VIRTKEY, ALT, NOINVERT
+    "N",            ID_TIME_NEXT,           VIRTKEY, ALT, NOINVERT
+    "P",            ID_TIME_PREV,           VIRTKEY, ALT, NOINVERT
+    VK_RIGHT,       ID_TIME_NEXT,           VIRTKEY, ALT, NOINVERT
+    VK_LEFT,        ID_TIME_PREV,           VIRTKEY, ALT, NOINVERT
+END
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// String Table
+//
+
+STRINGTABLE 
+BEGIN
+    ID_AFTERSTART           "After start mesage to run command line argument operations"
+    ID_TAB                  "Tab control"
+END
+
+STRINGTABLE 
+BEGIN
+    IDS_WSAEINTR            "The (blocking) call was canceled through WSACancelBlockingCall."
+    IDS_WSAEACCES           "The requested address is a broadcast address, but the appropriate flag was not set."
+    IDS_WSAEFAULT           "WSAEFAULT error."
+END
+
+STRINGTABLE 
+BEGIN
+    IDS_WSAEINVAL           "WSAEINVAL error."
+    IDS_WSAEMFILE           "WSAEMFILE error."
+END
+
+STRINGTABLE 
+BEGIN
+    IDS_WSAEWOULDBLOCK      "The socket is marked as nonblocking and the requested operation would block."
+    IDS_WSAEINPROGRESS      "A blocking Windows Sockets 1.1 call is in progress, or the service provider is still processing a callback function."
+    IDS_WSAEALREADY         "A nonblocking connect call is in progress on the specified socket."
+    IDS_WSAENOTSOCK         "The descriptor is not a socket."
+    IDS_WSAEMSGSIZE         "The message was too large to fit into the specified buffer and was truncated."
+    IDS_WSAEPROTOTYPE       "The specified protocol is the wrong type for this socket."
+    IDS_WSAEPROTONOSUPPORT  "The specified socket type or protocol is not supported in this address family."
+    IDS_WSAEOPNOTSUPP       "WSAEOPNOTSUPP error."
+    IDS_WSAEAFNOSUPPORT     "The specified address family is not supported."
+END
+
+STRINGTABLE 
+BEGIN
+    IDS_WSAEADDRINUSE       "The specified address is already in use."
+    IDS_WSAEADDRNOTAVAIL    "The specified address is not available from the local machine."
+    IDS_WSAENETDOWN         "The network subsystem or the associated service provider has failed."
+    IDS_WSAENETUNREACH      "The network cannot be reached from this host at this time."
+    IDS_WSAENETRESET        "The connection has been broken due to the remote host resetting."
+    IDS_WSAECONNABORTED     "The virtual circuit was terminated due to a time-out or other failure."
+    IDS_WSAECONNRESET       "The virtual circuit was reset by the remote side executing a <hard> or <abortive> close."
+    IDS_WSAENOBUFS          "No buffer space is available."
+    IDS_WSAEISCONN          "The socket is already connected."
+    IDS_WSAENOTCONN         "The socket is not connected."
+    IDS_WSAESHUTDOWN        "The socket has been shut down."
+    IDS_WSAETIMEDOUT        "Attempt to connect timed out without establishing a connection."
+    IDS_WSAECONNREFUSED     "The attempt to connect was forcefully rejected."
+END
+
+STRINGTABLE 
+BEGIN
+    IDS_WSAEHOSTUNREACH     "The remote host cannot be reached from this host at this time."
+END
+
+STRINGTABLE 
+BEGIN
+    IDS_WSASYSNOTREADY      "System is not ready."
+    IDS_WSAVERNOTSUPPORTED  "Not supported."
+    IDS_WSANOTINITIALISED   "A successful WSAStartup must occur before using this function."
+END
+
+#endif    // Russian resources
+/////////////////////////////////////////////////////////////////////////////
+
+
+/////////////////////////////////////////////////////////////////////////////
+// English (U.S.) resources
+
+#if !defined(AFX_RESOURCE_DLL) || defined(AFX_TARG_ENU)
+#ifdef _WIN32
+LANGUAGE LANG_ENGLISH, SUBLANG_ENGLISH_US
+#pragma code_page(1252)
+#endif //_WIN32
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Version
+//
+
+VS_VERSION_INFO VERSIONINFO
+ FILEVERSION 2,0,0,1
+ PRODUCTVERSION 2,0,0,1
+ FILEFLAGSMASK 0x3fL
+#ifdef _DEBUG
+ FILEFLAGS 0x9L
+#else
+ FILEFLAGS 0x8L
+#endif
+ FILEOS 0x4L
+ FILETYPE 0x1L
+ FILESUBTYPE 0x0L
+BEGIN
+    BLOCK "StringFileInfo"
+    BEGIN
+        BLOCK "040904e4"
+        BEGIN
+            VALUE "CompanyName", "ISA Software"
+            VALUE "FileDescription", "WVSS Player"
+            VALUE "FileVersion", "2.0.0.1"
+            VALUE "InternalName", "WVSS Player"
+            VALUE "LegalCopyright", "ISA software"
+            VALUE "OriginalFilename", "WVSS Player.exe"
+            VALUE "PrivateBuild", "201810312112"
+            VALUE "ProductName", "WVSS"
+            VALUE "ProductVersion", "2.0.0.1"
+        END
+    END
+    BLOCK "VarFileInfo"
+    BEGIN
+        VALUE "Translation", 0x409, 1252
+    END
+END
+
+#endif    // English (U.S.) resources
+/////////////////////////////////////////////////////////////////////////////
+
+
+
+#ifndef APSTUDIO_INVOKED
+/////////////////////////////////////////////////////////////////////////////
+//
+// Generated from the TEXTINCLUDE 3 resource.
+//
+#define _AFX_NO_SPLITTER_RESOURCES
+#define _AFX_NO_OLE_RESOURCES
+#define _AFX_NO_TRACKER_RESOURCES
+#define _AFX_NO_PROPERTY_RESOURCES
+
+#if !defined(AFX_RESOURCE_DLL) || defined(AFX_TARG_ENU)
+LANGUAGE 9, 1
+#pragma code_page(1252)
+#include "res\SITARWVSSPlayer.rc2"  // non-Microsoft Visual C++ edited resources
+#include "afxres.rc"     // Standard components
+#endif
+
+/////////////////////////////////////////////////////////////////////////////
+#endif    // not APSTUDIO_INVOKED
+

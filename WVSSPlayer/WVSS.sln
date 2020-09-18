@@ -1,0 +1,47 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 10.00
+# Visual Studio 2008
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "SITARWVSSPlayer", "SITARWVSSPlayer.vcproj", "{A4A29262-EF4F-49C7-9F1D-64700F9BB4CF}"
+EndProject
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "WVSSSeverity", "..\WVSSSeverity\WVSSSeverity.vcproj", "{E4ADB463-547E-434A-BC8F-49429FA9226B}"
+EndProject
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "WVSSPHP", "..\WVSSPHP\WVSSPHP.vcproj", "{39850AAE-1D17-4829-8213-5A301B6A9B09}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Solution Items", "Solution Items", "{9EA923B1-0975-4235-B21D-0DF02ADF6E4D}"
+	ProjectSection(SolutionItems) = preProject
+		LocalTestRun.testrunconfig = LocalTestRun.testrunconfig
+		SITARWVSSPlayer.vsmdi = SITARWVSSPlayer.vsmdi
+	EndProjectSection
+EndProject
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "TestProject1", "TestProject1\TestProject1.vcproj", "{9FDA5054-24C6-45B6-8897-B8B392BD231B}"
+EndProject
+Global
+	GlobalSection(TestCaseManagementSettings) = postSolution
+		CategoryFile = SITARWVSSPlayer.vsmdi
+	EndGlobalSection
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Win32 = Debug|Win32
+		Release|Win32 = Release|Win32
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{A4A29262-EF4F-49C7-9F1D-64700F9BB4CF}.Debug|Win32.ActiveCfg = Debug|Win32
+		{A4A29262-EF4F-49C7-9F1D-64700F9BB4CF}.Debug|Win32.Build.0 = Debug|Win32
+		{A4A29262-EF4F-49C7-9F1D-64700F9BB4CF}.Release|Win32.ActiveCfg = Release|Win32
+		{A4A29262-EF4F-49C7-9F1D-64700F9BB4CF}.Release|Win32.Build.0 = Release|Win32
+		{E4ADB463-547E-434A-BC8F-49429FA9226B}.Debug|Win32.ActiveCfg = Debug|Win32
+		{E4ADB463-547E-434A-BC8F-49429FA9226B}.Debug|Win32.Build.0 = Debug|Win32
+		{E4ADB463-547E-434A-BC8F-49429FA9226B}.Release|Win32.ActiveCfg = Release|Win32
+		{E4ADB463-547E-434A-BC8F-49429FA9226B}.Release|Win32.Build.0 = Release|Win32
+		{39850AAE-1D17-4829-8213-5A301B6A9B09}.Debug|Win32.ActiveCfg = Debug|Win32
+		{39850AAE-1D17-4829-8213-5A301B6A9B09}.Debug|Win32.Build.0 = Debug|Win32
+		{39850AAE-1D17-4829-8213-5A301B6A9B09}.Release|Win32.ActiveCfg = Release|Win32
+		{39850AAE-1D17-4829-8213-5A301B6A9B09}.Release|Win32.Build.0 = Release|Win32
+		{9FDA5054-24C6-45B6-8897-B8B392BD231B}.Debug|Win32.ActiveCfg = Debug|Win32
+		{9FDA5054-24C6-45B6-8897-B8B392BD231B}.Debug|Win32.Build.0 = Debug|Win32
+		{9FDA5054-24C6-45B6-8897-B8B392BD231B}.Release|Win32.ActiveCfg = Release|Win32
+		{9FDA5054-24C6-45B6-8897-B8B392BD231B}.Release|Win32.Build.0 = Release|Win32
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+EndGlobal

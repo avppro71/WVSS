@@ -1,0 +1,208 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <Filter Include="Source Files">
+      <UniqueIdentifier>{4FC737F1-C7A5-4376-A066-2A32D752A2FF}</UniqueIdentifier>
+      <Extensions>cpp;cxx;c;def</Extensions>
+    </Filter>
+    <Filter Include="Generated Files">
+      <UniqueIdentifier>{71ED8ED8-ACB9-4CE9-BBE1-E00B30144E11}</UniqueIdentifier>
+      <Extensions>moc;h;cpp</Extensions>
+      <SourceControlFiles>False</SourceControlFiles>
+    </Filter>
+    <Filter Include="Generated Files\Debug">
+      <UniqueIdentifier>{c298ae04-efe1-496d-b6ee-ab54d429fb00}</UniqueIdentifier>
+      <Extensions>cpp;moc</Extensions>
+      <SourceControlFiles>False</SourceControlFiles>
+    </Filter>
+    <Filter Include="Generated Files\Release">
+      <UniqueIdentifier>{f1b281a2-cdd9-4daf-b150-7765e0c153e4}</UniqueIdentifier>
+      <Extensions>cpp;moc</Extensions>
+      <SourceControlFiles>False</SourceControlFiles>
+    </Filter>
+    <Filter Include="Forms and Resources">
+      <UniqueIdentifier>{99349809-55BA-4b9d-BF79-8FDBB0286EB3}</UniqueIdentifier>
+      <Extensions>ui</Extensions>
+    </Filter>
+    <Filter Include="Source Files\IP">
+      <UniqueIdentifier>{f3295d71-35c4-4a60-9d1a-039c0fda7bc1}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\3DObj">
+      <UniqueIdentifier>{88dd38ce-c904-4ab1-8c1c-9af423b07ca4}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="main.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="qt3d.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="GeneratedFiles\Debug\moc_qt3d.cpp">
+      <Filter>Generated Files\Debug</Filter>
+    </ClCompile>
+    <ClCompile Include="GeneratedFiles\Release\moc_qt3d.cpp">
+      <Filter>Generated Files\Release</Filter>
+    </ClCompile>
+    <ClCompile Include="AVP3D.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="DrawPrimitive.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="IP\WVSSTcpSocket.cpp">
+      <Filter>Source Files\IP</Filter>
+    </ClCompile>
+    <ClCompile Include="GeneratedFiles\Debug\moc_WVSSTcpSocket.cpp">
+      <Filter>Generated Files\Debug</Filter>
+    </ClCompile>
+    <ClCompile Include="GeneratedFiles\Release\moc_WVSSTcpSocket.cpp">
+      <Filter>Generated Files\Release</Filter>
+    </ClCompile>
+    <ClCompile Include="IP\WVSSIPCommonFunctions.cpp">
+      <Filter>Source Files\IP</Filter>
+    </ClCompile>
+    <ClCompile Include="IP\WVSSIPCommonVariables.cpp">
+      <Filter>Source Files\IP</Filter>
+    </ClCompile>
+    <ClCompile Include="IP\WVSSTcpServer.cpp">
+      <Filter>Source Files\IP</Filter>
+    </ClCompile>
+    <ClCompile Include="GeneratedFiles\Debug\moc_WVSSTcpServer.cpp">
+      <Filter>Generated Files\Debug</Filter>
+    </ClCompile>
+    <ClCompile Include="GeneratedFiles\Release\moc_WVSSTcpServer.cpp">
+      <Filter>Generated Files\Release</Filter>
+    </ClCompile>
+    <ClCompile Include="IP\WVSSGenericCxn.cpp">
+      <Filter>Source Files\IP</Filter>
+    </ClCompile>
+    <ClCompile Include="GeneratedFiles\Debug\moc_WVSSGenericCxn.cpp">
+      <Filter>Generated Files\Debug</Filter>
+    </ClCompile>
+    <ClCompile Include="GeneratedFiles\Release\moc_WVSSGenericCxn.cpp">
+      <Filter>Generated Files\Release</Filter>
+    </ClCompile>
+    <ClCompile Include="IP\ZMQCxn.cpp">
+      <Filter>Source Files\IP</Filter>
+    </ClCompile>
+    <ClCompile Include="GeneratedFiles\Debug\moc_ZMQCxn.cpp">
+      <Filter>Generated Files\Debug</Filter>
+    </ClCompile>
+    <ClCompile Include="GeneratedFiles\Release\moc_ZMQCxn.cpp">
+      <Filter>Generated Files\Release</Filter>
+    </ClCompile>
+    <ClCompile Include="IP\ZMQReceiver.cpp">
+      <Filter>Source Files\IP</Filter>
+    </ClCompile>
+    <ClCompile Include="GeneratedFiles\Debug\moc_ZMQReceiver.cpp">
+      <Filter>Generated Files\Debug</Filter>
+    </ClCompile>
+    <ClCompile Include="GeneratedFiles\Release\moc_ZMQReceiver.cpp">
+      <Filter>Generated Files\Release</Filter>
+    </ClCompile>
+    <ClCompile Include="GeneratedFiles\Debug\moc_AVP3D.cpp">
+      <Filter>Generated Files\Debug</Filter>
+    </ClCompile>
+    <ClCompile Include="GeneratedFiles\Release\moc_AVP3D.cpp">
+      <Filter>Generated Files\Release</Filter>
+    </ClCompile>
+    <ClCompile Include="DrawThread.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="TexturedPlane.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="3DObj.cpp">
+      <Filter>Source Files\3DObj</Filter>
+    </ClCompile>
+    <ClCompile Include="LineParser.cpp">
+      <Filter>Source Files\3DObj</Filter>
+    </ClCompile>
+    <ClCompile Include="MaterialLib.cpp">
+      <Filter>Source Files\3DObj</Filter>
+    </ClCompile>
+    <ClCompile Include="3DObjLineParser.cpp">
+      <Filter>Source Files\3DObj</Filter>
+    </ClCompile>
+    <ClCompile Include="PlaneLibrary.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="SurfaceArea.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="Compass.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <CustomBuild Include="qt3d.ui">
+      <Filter>Forms and Resources</Filter>
+    </CustomBuild>
+    <CustomBuild Include="qt3d.h">
+      <Filter>Source Files</Filter>
+    </CustomBuild>
+    <CustomBuild Include="IP\WVSSTcpSocket.h">
+      <Filter>Source Files\IP</Filter>
+    </CustomBuild>
+    <CustomBuild Include="IP\WVSSTcpServer.h">
+      <Filter>Source Files\IP</Filter>
+    </CustomBuild>
+    <CustomBuild Include="IP\WVSSGenericCxn.h">
+      <Filter>Source Files\IP</Filter>
+    </CustomBuild>
+    <CustomBuild Include="IP\ZMQCxn.h">
+      <Filter>Source Files\IP</Filter>
+    </CustomBuild>
+    <CustomBuild Include="IP\ZMQReceiver.h">
+      <Filter>Source Files\IP</Filter>
+    </CustomBuild>
+    <CustomBuild Include="AVP3D.h">
+      <Filter>Source Files</Filter>
+    </CustomBuild>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="GeneratedFiles\ui_qt3d.h">
+      <Filter>Generated Files</Filter>
+    </ClInclude>
+    <ClInclude Include="DrawPrimitive.h">
+      <Filter>Source Files</Filter>
+    </ClInclude>
+    <ClInclude Include="IP\WVSSIPCommonFunctions.h">
+      <Filter>Source Files\IP</Filter>
+    </ClInclude>
+    <ClInclude Include="IP\WVSSIPCommonVariables.h">
+      <Filter>Source Files\IP</Filter>
+    </ClInclude>
+    <ClInclude Include="DrawThread.h">
+      <Filter>Source Files</Filter>
+    </ClInclude>
+    <ClInclude Include="TexturedPlane.h">
+      <Filter>Source Files</Filter>
+    </ClInclude>
+    <ClInclude Include="3DObj.h">
+      <Filter>Source Files\3DObj</Filter>
+    </ClInclude>
+    <ClInclude Include="LineParser.h">
+      <Filter>Source Files\3DObj</Filter>
+    </ClInclude>
+    <ClInclude Include="MaterialLib.h">
+      <Filter>Source Files\3DObj</Filter>
+    </ClInclude>
+    <ClInclude Include="3DObjLineParser.h">
+      <Filter>Source Files\3DObj</Filter>
+    </ClInclude>
+    <ClInclude Include="PlaneLibrary.h">
+      <Filter>Source Files</Filter>
+    </ClInclude>
+    <ClInclude Include="SurfaceArea.h">
+      <Filter>Source Files</Filter>
+    </ClInclude>
+    <ClInclude Include="Compass.h">
+      <Filter>Source Files</Filter>
+    </ClInclude>
+    <ClInclude Include="..\WVSSCommon\IP\WVSSIPProtocol.h">
+      <Filter>Source Files\IP</Filter>
+    </ClInclude>
+  </ItemGroup>
+</Project>
